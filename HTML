@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p class="description"id="description">A simple survey form to continue learning.<p>
+    <form id="survey-form">
+      <fieldset><legend>Personal Informations</legend>
+        <div>
+         <label id="name-label" for="first-name">Name* </label>
+         <input placeholder="John Doe" required id="name" name="name" type="text"/>
+        </div>
+        <div>
+         <label id="email-label" for="email">Email*</label>
+         <input placeholder="your@email.com"required id="email" name="email" type="email"/>
+        </div>
+        <div>
+         <label id="number-label" for="number">Age</label>
+         <input min="18" max="100"placeholder="25" id="number" name="age" type="number"/>
+        </div>
+        <p id="description">* marked areas are required to fill.<p>
+      </fieldset>
+      <fieldset><legend>Questions</legend>
+        <p>Which of the following would you like to specialize in?</p>
+        <select id="dropdown" name="dropdown">
+          <option disabled selected value>Select one...</option>
+          <option value="html">Html</option>
+          <option value="css">Css</option>
+          <option value="javascript">JavaScript</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <p>Why are you learning the core technologies of the World Wide Web?</p>
+        <label><input name="reason-to-learn" value="professional" type="radio"/>Professional needs</label>
+        <label><input name="reason-to-learn" value="personal" type="radio"/>Personal interests</label>
+        <label><input name="reason-to-learn" value="other" type="radio"/>Other</label>
+      </fieldset>
+      <fieldset>
+         <p>What else would you like to learn?</p>
+         <label><input name="interests" value="sql" type="checkbox"/>Sql</label>
+         <label><input name="interests" value="python" type="checkbox"/>Python</label>
+         <label><input name="interests" value="java" type="checkbox"/>Java</label>
+         <label><input name="interests" value="php" type="checkbox"/>PHP</label>
+         <label><input name="interests" value="bootstrap" type="checkbox"/>Bootstrap</label>
+         <label><input name="interests" value="c++" type="checkbox"/>C++</label>
+         <label><input name="interests" value="react" type="checkbox"/>React</label>
+         <label><input name="interests" value="jquery" type="checkbox"/>Jquery</label>
+         <label><input name="interests" value="typescript" type="checkbox"/>Typescript</label>
+          
+      </fieldset>
+      <fieldset>
+          <textarea rows="3" cols="30" class"textarea" id="comments" name="comment" placeholder="Additional comments..."></textarea>
+          <button class="button" type="submit" id="submit" >Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
