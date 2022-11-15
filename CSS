@@ -1,0 +1,47 @@
+body{ 
+  max-width:380px;
+  background-color:#4f7f51;
+  font-size:14px;
+  font-family:Candara;
+  color:#eeccaa;
+  margin:auto;
+}
+
+h1{
+  text-align: center
+}
+
+.description{
+  text-align: center
+}
+
+label{
+  display:block;
+}
+
+fieldset{ 
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  border: 0;
+  border-top: 1px solid #DDD;
+  width: 98%;
+}
+
+legend {
+  display: table; 
+  position: relative;
+  padding: 5px 20px;
+  color: #eee8aa;
+  font-size: 20px;
+  text-align: center;
+}
+
+.textarea {
+  display: block;
+  width: 100%;
+}
+
+.button {
+    display: block;
+}
